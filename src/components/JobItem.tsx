@@ -37,6 +37,7 @@ export default function JobItem({ candidate, job }: JobItemProps) {
         jobId: job.id,
         candidateId: candidate.candidateId,
         repoUrl: githubUrl,
+        applicationId: candidate.applicationId,
       });
 
       setSuccess("Postulación enviada con éxito.");

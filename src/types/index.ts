@@ -17,6 +17,7 @@ export type ApplyToJobPayload = {
   jobId: string
   candidateId: string
   repoUrl: string
+  applicationId: string
 }
 
 export type ApplyToJobResponse = {

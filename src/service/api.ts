@@ -29,10 +29,10 @@ export async function applyToJob(payload: ApplyToJobPayload): Promise<ApplyToJob
         },
         body: JSON.stringify(payload)
     })
+
     if(!response.ok) {
         throw new Error("Failed to apply to job")
     }
-
     const data: ApplyToJobResponse = await response.json()
     return data
 
